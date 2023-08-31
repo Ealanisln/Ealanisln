@@ -1,6 +1,6 @@
 👋 Hi, I'm Ealanisln, a web developer passionate about creating impactful and dynamic experiences on the web. Originally from Mexico City, raised in León, México, and now proud to call the SF Bay Area my home.
 
-🌟 With over 10 years of experience in the technology industry, I began my journey in tech support, and I am now embarking on an exciting new chapter in the development field.
+🌟 I began my journey in tech support, and I am now embarking on an exciting new chapter in the development field.
 
 👨🏽‍💻 Currently, my focus lies on mastering React, Next.js, and NodeJS, as I strive to stay at the forefront of modern web development practices. I am constantly seeking opportunities to enhance my skills and expand my knowledge.
 
