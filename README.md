@@ -1,4 +1,4 @@
-👋 Hi, I'm Ealanisln, a web developer passionate about creating impactful and dynamic experiences on the web. Originally from Mexico City, raised in León, México and living in Bay Area, CA. 
+👋 Hi, I'm Ealanisln, a web developer passionate about creating impactful and dynamic experiences on the web.
 
 👨🏽‍💻 Currently, my focus lies on mastering as Full Stack Dev, as I strive to stay at the forefront of modern web development practices. I am constantly seeking opportunities to enhance my skills and expand my knowledge.
 
