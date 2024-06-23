@@ -4,4 +4,4 @@
 
 🔥 I find immense satisfaction in collaborating on challenging projects that push my boundaries and allow me to continuously learn and grow.
 
-📫 Feel free to reach out to me at ealanisln@me.com or visit my website at www.alanis.dev to explore more about my journey and the exciting work I’ve done. Let’s come together and build something truly amazing!
+📫 Feel free to reach out to me at emmanuel@alanis.dev or visit my website at www.alanis.dev to explore more about my journey and the exciting work I’ve done. Let’s come together and build something truly amazing!
