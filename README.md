@@ -1,7 +1,35 @@
-👋 Hi, I’m Ealanisln, a web developer dedicated to crafting impactful and dynamic web experiences.
+# Ealanisln (Emmanuel Alanis)
 
-👨🏽‍💻 Currently, I am focused on mastering Full Stack Development, striving to stay at the cutting edge of modern web development practices. I’m always seeking opportunities to enhance my skills and expand my knowledge.
+👋 Hi, I'm Emmanuel Alanis, a passionate Full Stack Developer specializing in modern web technologies and scalable applications.
 
-🔥 I find immense satisfaction in collaborating on challenging projects that push my boundaries and allow me to continuously learn and grow.
+## 🚀 What I'm Working On
 
-📫 Feel free to reach out to me at emmanuel@alanis.dev or visit my website at www.alanis.dev to explore more about my journey and the exciting work I’ve done. Let’s come together and build something truly amazing!
+- **Ready Set**: A multi-user delivery service platform built with Next.js, PostgreSQL, and Shadcn components.
+- **Vet Family**: A comprehensive veterinary clinic management system using Next.js (App Router), MongoDB, Prisma ORM, and TypeScript.
+
+## 💻 Tech Stack
+
+- Frontend: React, Next.js, TypeScript
+- Backend: Node.js, Next.js API routes
+- Databases: PostgreSQL, MongoDB
+- ORM: Prisma
+- UI: Tailwind CSS, Shadcn components
+
+## 🌟 Key Skills
+
+- Full Stack Development
+- Database Design & Management
+- RESTful API Development
+- User Authentication & Authorization
+- Responsive Web Design
+
+## 🔥 Passion
+
+I thrive on building scalable, user-centric web applications that solve real-world problems. My projects demonstrate my ability to handle complex systems, from multi-user platforms to industry-specific management solutions.
+
+## 📫 Let's Connect
+
+- Email: emmanuel@alanis.dev
+- Website: www.alanis.dev
+
+Always open to collaboration and exciting new projects. Let's build something amazing together!
