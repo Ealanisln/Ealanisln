@@ -1,43 +1,57 @@
 # Emmanuel Alanis
 
-**Full Stack Developer** | TypeScript, React & Next.js Specialist
+**Full Stack Engineer & Tech Lead** | TypeScript, React, Next.js · Node (Hono, Express) · Python/Django · PHP/Symfony
 
-Building scalable, production-ready web applications with modern technologies and best practices.
+I build and run production systems for real businesses: a Mexican fintech lending platform, a Bay Area delivery company, an SF e-commerce site and a SaaS for veterinary clinics. Most of my time goes to shipping features, hardening security, keeping things observable, and writing runbooks other people can execute.
 
 ---
 
-## 🚀 Active Production Projects
+## 🚀 What I'm working on (2026)
 
-### [Destino SF](https://github.com/ReadySet1/destino-sf)
-Full-featured e-commerce platform for a San Francisco specialty food business with real-time inventory, Square payment processing, and comprehensive order management.
+### Crédito Express / WeDo — Tech Lead (fintech, Mexico)
+Loan-origination platform for payroll-deduction lending: credit applications, contract PDF generation, biometric identity verification (national-ID OCR, facial liveness), MFA/OTP, and legally binding document signing. Private repos; ~2,800 commits across 20+ services since Feb 2025.
 
-**Tech Stack:** Next.js 15, React 19, TypeScript, Prisma, PostgreSQL, Square, Supabase, Shippo, Twilio, Sentry, Google Maps API, TanStack Query
+**Stack:** React 18/19 · Vite · Node 22 · Hono 4 · Drizzle ORM · Python/Django 3.2 · PHP 8.2/Symfony 7 · MySQL 8 · PostgreSQL 15 · AWS (S3, EC2) · Docker · MediaPipe · Vitest · Playwright · PHPUnit/PHPStan
 
-**Key Features:**
-- Square payment integration with inventory sync
-- Real-time order tracking and management
-- Shippo shipping integration
-- SMS notifications via Twilio
-- Admin dashboard with comprehensive analytics
-- Full E2E test coverage with Playwright
+**Highlights:**
+- Leading the migration of a Django + PHP backend to a TypeScript API (Hono + Drizzle) against the same databases, verified with shadow tests that replay real requests side by side
+- Built a PDF document engine on `pdf-lib` (overlay/stamp, idempotent markers, barcodes, biometric signature stamps) replacing DOCX/reportlab templating
+- Facial liveness app with MediaPipe, embedded via iframe in the main SPA; national-ID OCR and verification flows
+- Planned and coordinated the production migration from a self-hosted VPS/PaaS to AWS (S3 mirror, DB migration, VPN, staged cutover), executed by the client's ops team from our runbooks
+- Security hardening after an intrusion: safe model registry instead of dynamic code execution, host IDS + honeypot, WAF with IP bans, CSP, CORS/authz lockdown, MFA/OTP, PDF sanitization
+- Observability: Prometheus/Grafana/Loki/Alertmanager stack, Sentry/GlitchTip across 6 apps, custom health dashboard
+- Mentoring a small dev team (1:1s, PR review, requirements refinement with the Scrum/BA side)
 
 ### [Ready Set](https://github.com/ReadySet1/ready-set)
-Enterprise on-demand courier delivery platform for the Bay Area, specializing in food safety and HIPAA certified deliveries with multi-tenant architecture.
+On-demand courier and catering delivery platform for the Bay Area (Food Safety and HIPAA certified). Lead developer since May 2025; ~1,400 commits, currently at **v2.7.0**.
 
-**Tech Stack:** Next.js 15, TypeScript, PostgreSQL, Prisma, Stripe, Supabase, Sanity CMS, TanStack Query, Vercel Analytics
+**Stack:** Next.js 15.5 · React 19 · TypeScript 5.9 · Prisma 6 · Supabase (Postgres + Auth) · Stripe · Sanity CMS · Twilio · Resend · Mapbox · Cloudinary · Upstash Redis · Sentry-compatible tracking (GlitchTip) · Jest 30 · Playwright
 
-**Key Features:**
-- Multi-tenant courier management system
-- Stripe subscription and payment processing
-- Sanity CMS for content management
-- Real-time delivery tracking
-- Comprehensive role-based access control
-- Advanced testing infrastructure (Jest + Playwright)
+**Highlights:**
+- Driver app: GPS tracking, shift management, delivery state machine, idempotent shift starts
+- Catering integrations (ezCater, CaterValley) and a partner API with authenticated endpoints
+- Delivery pricing calculator, role-based access control, admin task boards
+- Security sweeps (auth on all API routes, path-traversal removal, weekly `pnpm audit` + CodeQL)
+- CI/CD: release-please versioning, multi-arch Docker images on GHCR, self-hosted on Dokploy, daily `pg_dump` backups with retention
+
+### [Destino SF](https://github.com/ReadySet1/destino-sf)
+E-commerce and catering platform for a San Francisco specialty food business. ~900 commits since March 2025.
+
+**Stack:** Next.js 15.5 · React 19 · TypeScript 5.9 · Prisma 6 · Supabase · Square (payments + catalog) · Shippo · Resend + React Email · Google Maps · Mixpanel · Upstash Redis · Sentry · Jest 30 · Playwright + axe-core · Lighthouse CI
+
+**Highlights:**
+- Square as source of truth: catalog/inventory sync, webhooks, cron queues, payment processing
+- Shippo shipping and database-backed delivery zones for catering
+- Accessibility and performance gates in CI (axe, Lighthouse, bundle-size baseline)
+- Weekly DB backups and security audits that auto-open tracking issues
+- Diagnosed and fixed a production outage caused by a cron job disconnecting the shared Prisma client
 
 ### [Vetify](https://github.com/Ealanisln/vetify)
-Enterprise-grade veterinary clinic management platform with comprehensive scheduling, patient records, and dual payment processing.
+Multi-tenant SaaS for veterinary clinics: scheduling, medical records, billing. ~850 commits, currently at **v1.11**.
 
-**Tech Stack:** Next.js 15, React 19, TypeScript, Prisma, PostgreSQL, Stripe, Square, Kinde Auth, FullCalendar, Sentry
+**Stack:** Next.js 15.5 · React 19 · Prisma 6 · Kinde Auth · Stripe + Square · FullCalendar · Sentry · Playwright
+
+**Highlights:** subscription billing in local currency (MXN/CLP/COP/USD), trial lifecycle emails, tenant onboarding, PWA install flow, weekly E2E smoke suite.
 
 ---
 
@@ -47,97 +61,61 @@ Enterprise-grade veterinary clinic management platform with comprehensive schedu
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+![Vite](https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/-Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
 
 ### Backend & Database
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![Hono](https://img.shields.io/badge/-Hono-E36002?style=flat-square&logo=hono&logoColor=white)
+![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white)
+![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white)
+![Symfony](https://img.shields.io/badge/-Symfony-000000?style=flat-square&logo=symfony&logoColor=white)
 ![Prisma](https://img.shields.io/badge/-Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
+![Drizzle](https://img.shields.io/badge/-Drizzle-C5F74F?style=flat-square&logo=drizzle&logoColor=black)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Supabase](https://img.shields.io/badge/-Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
 
 ### Integrations & Services
 ![Stripe](https://img.shields.io/badge/-Stripe-008CDD?style=flat-square&logo=stripe&logoColor=white)
 ![Square](https://img.shields.io/badge/-Square-000000?style=flat-square&logo=square&logoColor=white)
 ![Twilio](https://img.shields.io/badge/-Twilio-F22F46?style=flat-square&logo=twilio&logoColor=white)
+![Resend](https://img.shields.io/badge/-Resend-000000?style=flat-square&logo=resend&logoColor=white)
 ![Google Maps](https://img.shields.io/badge/-Google_Maps-4285F4?style=flat-square&logo=google-maps&logoColor=white)
 ![Sentry](https://img.shields.io/badge/-Sentry-362D59?style=flat-square&logo=sentry&logoColor=white)
 
-### Tools & DevOps
-![Vercel](https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+### Infra, Testing & DevOps
+![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Grafana](https://img.shields.io/badge/-Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![Prometheus](https://img.shields.io/badge/-Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
 ![Playwright](https://img.shields.io/badge/-Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
+![Vitest](https://img.shields.io/badge/-Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)
 ![Jest](https://img.shields.io/badge/-Jest-C21325?style=flat-square&logo=jest&logoColor=white)
 ![pnpm](https://img.shields.io/badge/-pnpm-F69220?style=flat-square&logo=pnpm&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
-
-### UI Libraries & State Management
-- **Radix UI** - Accessible component primitives
-- **TanStack Query** - Server state management
-- **Zustand** - Client state management
-- **React Hook Form** - Form management with Zod validation
-- **Shadcn/ui** - Re-usable component library
-- **Lucide React** - Icon system
-- **Recharts** - Data visualization
 
 ---
 
 ## 🛠 Core Expertise
 
-### Full Stack Development
-- **Modern React & Next.js** - App Router, Server Components, Server Actions
-- **TypeScript** - Type-safe development with strict mode
-- **Database Design** - Complex schemas, relations, and optimizations with Prisma
-- **API Development** - RESTful APIs, webhook handlers, rate limiting
-
-### Payment & E-commerce
-- **Payment Processing** - Stripe (subscriptions, one-time), Square (inventory sync)
-- **Shipping Integration** - Shippo API integration for multi-carrier shipping
-- **Real-time Inventory** - Square catalog sync, stock management
-- **Order Management** - Complete order lifecycle with notifications
-
-### Integration & Communication
-- **SMS & Notifications** - Twilio integration for order updates
-- **Email Systems** - React Email with Resend
-- **Maps & Location** - Google Maps API for delivery routing
-- **CMS Integration** - Sanity headless CMS
-
-### Testing & Quality
-- **Comprehensive Testing** - Unit (Jest), Integration, E2E (Playwright)
-- **Test Coverage** - 80%+ coverage with automated reporting
-- **Performance Testing** - Load testing, optimization strategies
-- **Error Monitoring** - Sentry integration for production tracking
-
-### Security & Authentication
-- **Authentication Systems** - Kinde, Supabase Auth with SSR
-- **Role-Based Access Control** - Multi-tenant architecture
-- **Rate Limiting** - Upstash Redis for API protection
-- **Data Validation** - Runtime validation with Zod schemas
+- **Full stack TypeScript:** Next.js App Router (Server Components, Server Actions), React 18/19 SPAs with Vite, Node APIs with Hono and Express, Zod validation end to end
+- **Legacy modernization:** porting Django and PHP services to TypeScript against live databases, with shadow testing and behavior-parity gates instead of big-bang rewrites
+- **Payments and commerce:** Stripe subscriptions and multi-currency billing, Square payments and catalog sync, Shippo shipping, order lifecycles with webhooks and queues
+- **Identity and documents:** biometric liveness (MediaPipe), national-ID OCR, MFA/OTP over SMS and WhatsApp, PDF generation and digital signing
+- **Security:** authz lockdowns, CSP, WAF and IDS, credential externalization, dependency audits and CodeQL in CI, incident response with commit-level timelines
+- **Operations:** AWS migrations, Docker self-hosting (Coolify, Dokploy), Prometheus/Grafana/Loki, Sentry/GlitchTip, automated DB backups with retention, disaster-recovery plans
+- **Quality:** Jest, Vitest, PHPUnit, Playwright (including accessibility and visual checks), PHPStan, coverage thresholds enforced in CI, release-please and Conventional Commits
 
 ---
 
-## 📈 Development Practices
+## 📈 How I work
 
-- **Type Safety First** - End-to-end type safety from database to UI
-- **Test-Driven Development** - Write tests before features, maintain high coverage
-- **CI/CD Pipelines** - Automated testing, type checking, and deployments
-- **Code Quality** - ESLint, Prettier, Husky pre-commit hooks
-- **Monitoring & Observability** - Sentry error tracking, analytics integration
-- **Performance Optimization** - Code splitting, lazy loading, caching strategies
-- **Documentation** - Comprehensive inline docs and README files
-- **Agile Workflow** - Iterative development with continuous feedback
-
----
-
-## 🌟 Production Highlights
-
-- **Real-world Impact** - Building and maintaining production applications serving actual businesses
-- **Complex Integrations** - Square, Stripe, Shippo, Twilio, Google Maps APIs
-- **Payment Processing** - Handling real transactions with dual payment gateway support
-- **Multi-tenant Systems** - Role-based access control for different user types
-- **E2E Testing** - Comprehensive Playwright test suites for critical user flows
-- **Production Deployments** - CI/CD pipelines with automated testing and validation
-- **Error Tracking** - Proactive monitoring with Sentry for production stability
-- **Scalable Architecture** - Built to handle growth with optimized database queries
+- **Runbooks as a deliverable:** when someone else runs production, the numbered steps, idempotent scripts, verification criteria and rollback plan are the product
+- **Conventional Commits, CHANGELOGs and semver** across every repo I touch
+- **Tests before push, CI as the gate:** lint, typecheck, unit, E2E, security audit, build checks
+- **Observability first:** every app reports errors with fingerprints and has a health endpoint before it ships
+- **Small team leadership:** dailies, 1:1s, PR reviews, written agreements, and requirement refinement before code starts
 
 ---
 
@@ -145,14 +123,12 @@ Enterprise-grade veterinary clinic management platform with comprehensive schedu
 
 - **Email:** emmanuel@alanis.dev
 - **Website:** [www.alanis.dev](https://www.alanis.dev)
-- **Location:** Open to remote opportunities
+- **Location:** Mexico · open to remote work
 
-**Open to:** Full-time positions, contract work, and interesting collaborations
-
-**Specializing in:** E-commerce platforms, SaaS applications, multi-tenant systems, payment integrations, and complex business logic
+**Open to:** full-time positions, contract work, and interesting collaborations in fintech, logistics, e-commerce and SaaS.
 
 ---
 
 <div align="center">
-  <i>Building production-ready applications that solve real business problems.</i>
+  <i>Building production systems that solve real business problems.</i>
 </div>
