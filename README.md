@@ -2,13 +2,13 @@
 
 **Full Stack Engineer & Tech Lead** | TypeScript, React, Next.js · Node (Hono, Express) · Python/Django · PHP/Symfony
 
-I build and run production systems for real businesses: a Mexican fintech lending platform, a Bay Area delivery company, an SF e-commerce site and a SaaS for veterinary clinics. Most of my time goes to shipping features, hardening security, keeping things observable, and writing runbooks other people can execute.
+I build and run production systems for real businesses: a Mexican non-bank lender (SOFOM), a Bay Area delivery company, an SF e-commerce site and a SaaS for veterinary clinics. Most of my time goes to shipping features, hardening security, keeping things observable, and writing runbooks other people can execute.
 
 ---
 
 ## 🚀 What I'm working on (2026)
 
-### Crédito Express / WeDo — Tech Lead (fintech, Mexico)
+### Crédito Express — Tech Lead (SOFOM, Mexico)
 Loan-origination platform for payroll-deduction lending: credit applications, contract PDF generation, biometric identity verification (national-ID OCR, facial liveness), MFA/OTP, and legally binding document signing. Private repos; ~2,800 commits across 20+ services since Feb 2025.
 
 **Stack:** React 18/19 · Vite · Node 22 · Hono 4 · Drizzle ORM · Python/Django 3.2 · PHP 8.2/Symfony 7 · MySQL 8 · PostgreSQL 15 · AWS (S3, EC2) · Docker · MediaPipe · Vitest · Playwright · PHPUnit/PHPStan
@@ -125,7 +125,7 @@ Multi-tenant SaaS for veterinary clinics: scheduling, medical records, billing. 
 - **Website:** [www.alanis.dev](https://www.alanis.dev)
 - **Location:** Mexico · open to remote work
 
-**Open to:** full-time positions, contract work, and interesting collaborations in fintech, logistics, e-commerce and SaaS.
+**Open to:** full-time positions, contract work, and interesting collaborations in financial services, logistics, e-commerce and SaaS.
 
 ---
 
