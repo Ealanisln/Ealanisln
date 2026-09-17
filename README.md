@@ -20,6 +20,7 @@ Loan-origination platform for payroll-deduction lending: credit applications, co
 - Planned and coordinated the production migration from a self-hosted VPS/PaaS to AWS (S3 mirror, DB migration, VPN, staged cutover), executed by the client's ops team from our runbooks
 - Security hardening after an intrusion: safe model registry instead of dynamic code execution, host IDS + honeypot, WAF with IP bans, CSP, CORS/authz lockdown, MFA/OTP, PDF sanitization
 - Observability: Prometheus/Grafana/Loki/Alertmanager stack, Sentry/GlitchTip across 6 apps, custom health dashboard
+- Scale in production: 24K+ credit applications, 95K+ attached documents, 30K+ national-ID verifications and 2,100+ digitally signed contracts in 2026 alone, used daily by ~140 advisors across 90 branches
 - Mentoring a small dev team (1:1s, PR review, requirements refinement with the Scrum/BA side)
 
 ### [Ready Set](https://github.com/ReadySet1/ready-set)
